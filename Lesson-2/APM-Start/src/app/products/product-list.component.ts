@@ -27,9 +27,7 @@ export class ProductListComponent implements OnInit {
 	products: IProduct[];
 
 	// primarily used for initiation
-	constructor(private productService: ProductService) {
-
-	}
+	constructor(private productService: ProductService) { }
 
 	onRatingClicked(message: string): void {
 		this.pageTitle = 'Product List - ' + message;
